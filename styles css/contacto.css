@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "Futura";
+  src: url(../fonts/FuturaLight.ttf);
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/AvenirLight.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+  font-family: "Avenir";
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 4em;
+}
+
+.logo {
+  height: 30vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 6vh;
+}
+
+.logo img {
+  height: 15vh;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: 0.6em;
+  word-spacing: 0.2em;
+  margin-top: 12px;
+}
+
+nav {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 6px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 1);
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+li {
+  padding: 0px 15px;
+  font-size: 0.9em;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  padding: 6px;
+}
+
+a:link,
+a:visited,
+a:focus {
+  color: #000000;
+}
+a:hover {
+  cursor: pointer;
+  color: #f6cec8;
+  background-color: #dd8469;
+}
+/*SECTION CONTACT FORM*/
+
+section>h2{
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 0.18em;
+    font-weight: lighter;
+}
+main{
+    height: fit-content;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10vh 0;
+}
+
+.contact-form{
+    height: 100vh;
+    width:35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+label{
+    font-size: 1.1em;
+    margin-right: 1.1em;
+    font-weight: bold;
+}
+
+.datos{
+    margin-right: 1.3em;
+}
+.e-mail{
+    margin-right: 2.2em;
+}
+.contact-form p{
+    font-size: 1.2em;
+}
+
+.contact-form input{
+    font-size: 1.1em;
+    height: 7vh;
+    width: 25vw;
+    justify-self: flex-end;
+    margin: 0.4em 0;
+}
+.msg{
+    display: inline-flex;
+}
+
+.msg p{
+    font-size: 1.1em;
+    font-weight: bold;
+    
+}
+
+textarea{
+    width: 25vw;
+    height: 20vh;
+    margin: 1.2em;
+    overflow: hidden;
+    font-family: "Avenir";
+    font-size: 1em;
+}
+
+
+.boton { 
+    text-align: center; 
+    margin-left: 3.2em;
+    font-family: "Avenir";  
+}
+.btn-reset{
+    font-size: 1.1em !important;
+    width:8vw;
+    margin-left: 0.3em;
+}
+
+.boton input[type=submit], .btn-enviar{
+ padding: 6px;
+  width: 12vw;
+  height: fit-content;
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  text-align: center;
+}
+
+.boton input[type=submit]:hover{
+    cursor:pointer;
+    color: #f6cec8;
+    background-color: #dd8469;
+    border: 1px solid #dd8469;
+
+}
+
+aside{
+    width: 35vw; 
+    height: 90vh;   
+}
+
+
+
+/* SECTION SUSCRIBE*/
+.suscribe {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+input::placeholder,
+input,
+button {
+  font-family: "Avenir";
+  font-size: 0.9em;
+  letter-spacing: 0.07em;
+}
+input {
+  width: 25vw;
+  padding: 5px;
+}
+
+form button {
+  padding: 6px;
+  width: 10vw;
+  height: fit-content;
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+form button:hover {
+  cursor: pointer;
+  color: #f6cec8;
+  background-color: #dd8469;
+  border: solid 1px #dd8469;
+}
+/* SECTION FOOTER*/
+
+footer {
+  height: 14vh;
+  width: 100%;
+  display: flex;
+  border-top: 1px solid rgba(0, 0, 0, 1);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: "Avenir";
+}
+
+.icons {
+  color: #000000;
+  font-size: 1.6em;
+  text-align: center;
+  padding: 5px 5px;
+}
+
+.fa-instagram {
+  padding-right: 10px;
+}
+.fa-instagram:hover,
+.fa-whatsapp:hover {
+  transform: scale(1.25);
+  color: #dd8469;
+  cursor: pointer;
+}
+
+footer p {
+  padding-top: 10px;
+  margin: 5px;
+  font-size: 0.9em;
+  font-style: italic;
+}

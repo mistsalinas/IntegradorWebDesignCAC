@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Futura";
+  src: url(../fonts/FuturaLight.ttf);
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/AvenirLight.ttf);
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Avenir";
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  width: 25%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+section > div {
+  margin-top: 10vh;
+  width: 50vh;
+  height: 85vh;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+img {
+  padding-top: 3.5vh;
+  width: 15vw;
+  height: 36vh;
+}
+
+form {
+  margin: 5vh 0vh 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-family: "Avenir";
+}
+
+input {
+  width: 20vw;
+  height: 7vh;
+  padding: 15px;
+  margin-bottom: .1em;
+  border-color:  rgba(0, 0, 0, 0.12);
+}
+
+input, input::placeholder , button, a{
+    font-family: "Avenir";
+    font-size: 1em;
+}
+
+form button {
+  padding: 8px;
+  width: 20vw;
+  height: fit-content;
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  margin: 1em 0;
+  letter-spacing: .04em;
+}
+
+form button:hover {
+  cursor: pointer;
+  color: #f6cec8;
+  background-color: #dd8469;
+  border: 1px solid #dd8469;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+    font-size: .95em;
+    letter-spacing: .04em;
+}
+
+span{
+    background-color: #000000;
+    padding: .5px .3px;
+    margin-right: 5px;
+}
+
+a:hover{
+    color: #dd8469;
+}
+a:link,
+a:visited,
+a:focus {
+  text-decoration: none;
+}

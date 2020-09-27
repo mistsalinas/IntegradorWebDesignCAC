@@ -1,0 +1,276 @@
+@font-face{
+    font-family: "Futura";
+    src: url(../fonts/FuturaLight.ttf);
+}
+@font-face{
+    font-family: "Avenir";
+    src: url(../fonts/AvenirLight.ttf);
+}
+
+body{
+    background-color: #FAFAFA;
+    font-family: "Avenir";
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 6em;
+}
+
+.logo{
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+.logo img{
+    height: 15vh;
+}
+
+h1{
+    font-size: 2em;
+    letter-spacing: 0.6em;
+    word-spacing: 0.2em;
+    margin-top: 12px;
+}
+
+nav{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    display: inline-flex;
+    list-style: none; 
+    padding: 6px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 1); 
+    border-bottom: 1px solid rgba(0, 0, 0, 1);       
+}
+
+li{
+    padding: 0px 15px;
+    font-size: 0.9em;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+    padding: 6px;
+}
+
+a:link, a:visited, a:focus {
+    color:#000000;
+}
+a:hover{
+    cursor:pointer;
+    color: #F6CEC8;
+    background-color: #DD8469;
+    
+}
+
+/*SECTION1 y SECTION2*/
+
+.home1, .home2{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+}
+
+.home1 img, .home2 img{
+    height:60vh;
+    width: 49.4vw;
+}
+
+.home1 img{
+    position: absolute;
+    right: 0;
+}
+
+
+.textHome, .textHome2{
+    display: relative;
+    align-items: center;
+    width: 49.6vw;
+    background-color: #FCEFED;
+    text-align: center;
+    align-content: center;
+}
+
+.textHome{    
+    justify-content: flex-end;
+}
+
+.textHome2{    
+    justify-content: start;
+}
+.textHome div, .textHome2 div{
+    position: absolute;
+    background-color: #DD8469; 
+    color: #F6CEC8; 
+    border: 2px solid #F6CEC8;
+}
+.textHome div{
+    height: 18vh;
+    width: 32vw;
+    padding-bottom: 15px;
+    right: 47.5%;
+    top: 88%;
+    z-index: 1;
+    
+}
+
+.textHome2 div{
+    width: 30vw;
+    height: 20vh;
+    left: 48%;
+    top: 135%;
+}
+
+h2{
+    font-size: 1.6em;
+    font-weight: 100;
+}
+
+.textHome2 button{
+    color: #F6CEC8;
+    background-color: #DD8469;
+    border: 2px solid #F6CEC8;
+    font-family: "Avenir";
+    font-size: 0.9em;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.textHome2 button:hover{
+    cursor:pointer;
+    color: #F6CEC8;
+    background-color: #CD532E;
+    border: 1px solid #CD532E ;
+}
+/*SECTION POTION MIXER*/
+.potionMixer{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+}
+
+.potionMixer > div{
+    width: 15vw;
+    height: fit-content;
+    margin: 0px 35px;
+    text-align: center;
+}
+
+.infoMixer{
+    justify-content: center;
+    align-content: center;
+}
+
+.infoMixer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-family: "Futura";
+}
+.potionMixer img{
+    height: 25vh;
+    text-align: center;
+}
+
+.potionMixer p{
+    width: 10vw;
+    height: fit-content;
+    text-align: center;
+    margin:0;
+}
+
+/* SECTION SUSCRIBE*/
+.suscribe{
+    height: 40vh;
+    width:100%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+input::placeholder, input, button{
+    font-family: "Avenir";
+    font-size: 0.9em;
+    letter-spacing: 0.07em;
+}
+input{
+    width: 25vw;
+    padding: 5px;
+}
+
+form button{ 
+    padding: 6px;
+    width: 10vw;
+    height: fit-content;
+    background-color: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+form button:hover{
+    cursor: pointer;
+    color: #F6CEC8;
+    background-color: #DD8469;
+    border:hidden;
+}
+/* SECTION FOOTER*/
+
+footer{
+    height: 14vh;
+    width:100%;
+    display: flex;
+    border-top: 1px solid rgba(0, 0, 0, 1); 
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    font-family: "Avenir";
+}
+
+.icons {
+    color: #000000;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.fa-instagram{
+    padding-right: 10px;
+}
+.fa-instagram:hover, .fa-whatsapp:hover{
+    transform: scale(1.25);
+    color: #DD8469;
+    cursor: pointer;
+}
+
+footer p{
+    padding-top: 10px;
+    margin:5px;
+    font-size:0.9em;
+    font-style: italic;
+}

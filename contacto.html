@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles css/contacto.css" />
+    <link rel="icon" href="img/pot.png" type="icon" />
+    <title>Miss Pociones</title>
+    <script
+      src="https://kit.fontawesome.com/9d1be0c633.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/cauldron6.png" alt="calderoIlus" />
+        <h1>MISS POCIONES</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aromaterapia.html">AROMATERAPIA</a></li>
+          <li><a href="floresbach.html">FLORES DE BACH</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+          <li><a href="shop.html" target="_blank" >COMPRAR</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>CONTACTO</h2>
+      <main>
+        <div class="contact-form">
+          <form action="show_data.html" target="_blank">
+            <label for="firstname" class="datos">Nombre*</label
+            ><input
+              size="30"
+              type="text"
+              name="firstname"
+              placeholder="Ingrese su nombre"
+              required
+            />
+            <br />
+            <label for="lastname" class="datos">Apellido*</label
+            ><input
+              size="30"
+              type="text"
+              name="lastname"
+              placeholder="Ingrese su apellido"
+              required
+            /><br />
+            <label for="city">Provincia*</label
+            ><input
+              list="city"
+              name="browser"
+              placeholder="Elija una opción"
+              required
+            />
+            <datalist id="city">
+              <option value="CABA"></option>
+              <option value="GBA"></option>
+              <option value="Buenos Aires"></option>
+              <option value="Catamarca"></option>
+              <option value="Chaco"></option>
+              <option value="Chubut"></option>
+              <option value="Córdoba"></option>
+              <option value="Entre Ríos"></option>
+              <option value="Formosa"></option>
+              <option value="Jujuy"></option>
+              <option value="La Pampa"></option>
+              <option value="La Rioja"></option>
+              <option value="Mendoza"></option>
+              <option value="Misiones"></option>
+              <option value="Neuquén"></option>
+              <option value="Río Negro"></option>
+              <option value="Salta"></option>
+              <option value="San Juan"></option>
+              <option value="San Luis"></option>
+              <option value="Santa Cruz"></option>
+              <option value="Santa Fe"></option>
+              <option value="Santiago del Estero"></option>
+              <option
+                value="Tierra del Fuego, Antártida e Isla del Atlántico Sur"
+              ></option>
+              <option value="Tucumán"></option>
+            </datalist>
+            <br />
+            <label for="telefono" class="tel">Teléfono*</label
+            ><input
+              type="tel"
+              name="telefono"
+              placeholder="Ingrese su número (sin guiones)"
+              required
+            /><br />
+            <label for="mail" class="e-mail">E-mail*</label
+            ><input
+              type="email"
+              name="mail"
+              placeholder="Ingrese su email"
+              required
+            /><br />
+            <div class="msg">
+              <p>Mensaje*</p>
+              <textarea
+                name="comentarios"
+                rows="10"
+                cols="30"
+                placeholder="Escriba su consulta..."
+                required
+              ></textarea>
+            </div>
+            <div class="boton">
+              <input type="submit" value="Enviar"/>
+              <button type="reset"  class="btn-reset">Reset</button>
+            </div>
+          </form>
+        </div>
+        <aside>
+          <h4>¿Dónde nos encontras?</h4>
+          <p>P. Sherman, calle Wallaby, 42, Sydney</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424146.10300325596!2d150.65177960941722!3d-33.8473566513892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sS%C3%ADdney%20Nueva%20Gales%20del%20Sur%2C%20Australia!5e0!3m2!1ses!2sar!4v1601173665302!5m2!1ses!2sar"
+            width="450"
+            height="300"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </aside>
+      </main>
+    </section>
+
+    <section class="suscribe">
+      <p>Suscribite a nuestro Newsletter para recibir tips y promociones.</p>
+      <form action="">
+        <input type="email" placeholder="Ingrese su email" required />
+        <button>SUSCRIBIRSE</button>
+      </form>
+    </section>
+    <footer>
+      <div class="icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-whatsapp"></i>
+      </div>
+      <p>&copy;MissPociones 2020 | Website by Micaela Salinas</p>
+    </footer>
+  </body>
+</html>
