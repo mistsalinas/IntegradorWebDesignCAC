@@ -106,7 +106,8 @@ h1 {
 
 .textHome,
 .textHome2 {
-  display: relative;
+  display: flex;
+  position: relative;
   align-items: center;
   width: 49.6vw;
   background-color: #fcefed;
@@ -133,20 +134,23 @@ h1 {
   justify-content: center;
 
 }
+
 .textHome div {
   height: 18vh;
   width: 32vw;
   padding-bottom: 15px;
-  right: 47.5%;
-  top: 88%;
+  right: 10%;
+  top: 50%;
   z-index: 1;
 }
-
+.mobile {
+  display: none;
+}
 .textHome2 div {
   width: 30vw;
   height: 20vh;
-  left: 48%;
-  top: 135%;
+  left: 20%;
+  top: 30%;
 }
 
 h2 {
@@ -432,33 +436,47 @@ footer p {
 
   .home1,
   .home2 {
-    height: 30vh;
+    height: 40vh;
   }
 
-  .home1 img,
-  .home2 img {
-    height: 30vh;
+  .home1 img {
+    height: 40vh;
     width: 80.4vw;
   }
+  .home2 div img{
+    height: 40vh;
+    width: 80.4vw;
+  }
+  .mobile{
+    display: inline;
+  }
+  .desktop {
+    display: none;
+  }
 
-  .textHome,
-  .textHome2 {
+
+  .textHome {
     width: 19.6vw;
   }
 
+  .textHome2{
+    width: 19.6vw;
+  }
+   
+
   .textHome div {
-    height: 20vh;
+    height: 25vh;
     width: 55vw;
     padding-bottom: 5px;
-    right: 41%;
-    top: 75%;
+    right: -215%;
+    top: 15%;
   }
 
   .textHome2 div {
     width: 53vw;
-    height: 16vh;
-    left: 45%;
-    top: 115%;
+    height: 20vh;
+    left: -215%;
+    top: 30%;
   }
 
   .textHome p {
@@ -472,7 +490,7 @@ footer p {
   .textHome2 button {
     border: 1px solid #f6cec8;
     font-size: 0.7em;
-    padding: 0.6em 0.938em;
+    padding: 0.6em 0.4em;
     margin-bottom: 0.5em;
   }
 
