@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles css/styles.css" />
-    <link rel="icon" href="img/pot.png" type="icon">
+    <link rel="icon" href="img/pot.png" type="icon" />
     <title>Miss Pociones</title>
-    <script src="https://kit.fontawesome.com/9d1be0c633.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9d1be0c633.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -15,14 +18,32 @@
         <img src="img/cauldron6.png" alt="calderoIlus" />
         <h1>MISS POCIONES</h1>
       </div>
-      <nav>
-        <ul>
+      
+      <nav class="mobile-nav">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul class="mobilemenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aromaterapia.html">AROMATERAPIA</a></li>
+            <li><a href="floresbach.html">FLORES DE BACH</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="shop.html" target="_blank">COMPRAR</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="desktop-nav">
+        <ul class="desktopmenu">
           <li><a href="index.html">HOME</a></li>
           <li><a href="aromaterapia.html">AROMATERAPIA</a></li>
           <li><a href="floresbach.html">FLORES DE BACH</a></li>
           <li><a href="faqs.html">FAQs</a></li>
           <li><a href="contacto.html">CONTACTO</a></li>
-          <li><a href="shop.html">COMPRAR</a></li>
+          <li><a href="shop.html" target="_blank">COMPRAR</a></li>
         </ul>
       </nav>
     </header>
@@ -53,16 +74,24 @@
     <section class="potionMixer">
       <div class="infoMixer">
         <img src="img/BookSection.png" alt="Libro" />
-        <div><h3>LOREM IMPSUM</h3><p>Lorem ipsum dolor sit elit consectetur.</p></div>
+        <div>
+          <h3>LOREM IMPSUM</h3>
+          <p>Lorem ipsum dolor sit elit consectetur.</p>
+        </div>
       </div>
       <div class="infoMixer">
         <img src="img/PlantSection.png" alt="Planta/Hierba" />
-        <div><h3>LOREM IMPSUM</h3>
-          <p>Lorem ipsum dolor adipisicing.</p></div>
+        <div>
+          <h3>LOREM IMPSUM</h3>
+          <p>Lorem ipsum dolor adipisicing.</p>
+        </div>
       </div>
       <div class="infoMixer">
         <img src="img/PotionSection.png" alt="Pocion" />
-        <div><h3>LOREM IMPSUM</h3><p>Lorem ipsum dolor sit amet elit.</p></div>
+        <div>
+          <h3>LOREM IMPSUM</h3>
+          <p>Lorem ipsum dolor sit amet elit.</p>
+        </div>
       </div>
     </section>
 

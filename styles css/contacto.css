@@ -201,6 +201,9 @@ aside{
   justify-content: center;
   font-size: 1.2em;
 }
+.suscribe p{
+  margin: 1em;
+}
 
 input::placeholder,
 input,
